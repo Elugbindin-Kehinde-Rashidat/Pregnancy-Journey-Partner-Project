@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Pregnancy Journey Patner
 ## Project Overview
 Pregnancy Journey Partner is an AI-powered Maternal Health Risk Assessment and Education Assistant.
