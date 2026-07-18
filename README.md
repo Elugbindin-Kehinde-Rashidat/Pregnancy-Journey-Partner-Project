@@ -1,4 +1,4 @@
-# Pregnancy Journey Partner
+# Pregnancy Journey Partner (PJP)
 ## Project Overview
 Pregnancy Journey Partner is an AI-powered Maternal Health Risk Assessment and Education Assistant.
 ## Problem Definition
