@@ -33,10 +33,10 @@ The maternal health risk prediction model will be evaluated using the following 
 
 - Accuracy
 - Precision
-- Recall (Primary Metric)
+- Recall 
 - F1-Score
 - Confusion Matrix
-- ROC-AUC (One-vs-Rest for multi-class classification)
+- ROC-AUC 
 ## Data Source
 
 The dataset used for this project was obtained from Hugging Face:
