@@ -27,16 +27,51 @@ The success of the project will be evaluated using the following business metric
 - Correctly identify at least **90% of pregnancies classified as High Risk** for further medical review.
 - Provide continuous access to maternal health education through a chatbot with a target availability of **24 hours a day, 7 days a week**.
 - Reduce the manual workload involved in preliminary maternal screening, allowing healthcare professionals to focus on higher-risk cases.
-## Machine Learning Metrics
 
-The maternal health risk prediction model will be evaluated using the following metrics:
+## Model Evaluation Results
 
-- Accuracy
-- Precision
-- Recall 
-- F1-Score
-- Confusion Matrix
-- ROC-AUC 
+### Model Comparison
+
+| Model               | Accuracy | Precision | Recall | F1-Score |
+| ------------------- | -------: | --------: | -----: | -------: |
+| Random Forest       |   94.07% |    94.32% | 94.07% |   94.03% |
+| Tuned Random Forest |   94.03% |    94.31% | 94.03% |   94.00% |
+| Decision Tree       |   89.62% |    89.65% | 89.62% |   89.63% |
+| Logistic Regression |   78.07% |    78.65% | 78.07% |   78.11% |
+
+### Final Model: Random Forest
+
+The Random Forest was selected as the final model based on its strong overall performance and its ability to identify high-risk pregnancies.
+
+| Metric           |     Result |
+| ---------------- | ---------: |
+| Accuracy         | **94.07%** |
+| Precision        | **94.32%** |
+| Recall           | **94.07%** |
+| F1-Score         | **94.03%** |
+| High-Risk Recall | **85.70%** |
+
+### Confusion Matrix
+
+The confusion matrix for the Random Forest model is shown below:
+
+| Actual / Predicted | High Risk | Low Risk | Mid Risk |
+| ------------------ | --------: | -------: | -------: |
+| **High Risk**      |     1,258 |        3 |      207 |
+| **Low Risk**       |         0 |    2,392 |       28 |
+| **Mid Risk**       |         7 |      111 |    1,994 |
+
+### ROC-AUC
+
+| Model               | ROC-AUC |
+| ------------------- | ------: |
+| Logistic Regression |  91.30% |
+| Tuned Random Forest |  98.40% |
+
+### Key Observation
+
+The Random Forest achieved an overall recall of **94.07%** and a High-Risk Recall of **85.70%**. Since identifying high-risk pregnancies is the primary objective of this project, **Recall for the High-Risk class was given particular emphasis during model evaluation**.
+
 ## Data Source
 
 The dataset used for this project was obtained from Hugging Face:
