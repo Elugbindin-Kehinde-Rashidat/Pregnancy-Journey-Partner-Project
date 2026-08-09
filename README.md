@@ -83,7 +83,6 @@ The dataset used for this project was obtained from Hugging Face:
 This dataset contains synthetic maternal health and pregnancy-related records designed for machine learning research and educational purposes. It includes features such as maternal age, gravidity, parity, gestational age, blood pressure measurements, BMI, haemoglobin level, ANC visits, pregnancy complications, pregnancy outcomes, and risk level classification.
 
 The dataset is entirely synthetic and does not contain real patient information. It was generated based on parameters from published maternal health literature and guidelines, making it suitable for developing and testing predictive models but not for clinical decision-making.
-## Status
-Project setup in progress.
+
 ## Disclaimer
 This project is for educational purposes and does not replace professional medical advice. 
